@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import StyledSection from "./components/StyledSection";
+import StyledDiv from "./components/StyledDiv";
+import MotherDiv from "./components/MotherDiv";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MotherDiv>
+      <StyledSection width="100px" height="100px" />
+      <StyledDiv width="100px" height="100px" />
+      <StyledSection width="100px" height="100px" />
+      <StyledDiv width="100px" height="100px" />
+      <section style={{ width: "100px", height: "100px" }} />
+      <StyledSection width="100px" height="100px" />
+    </MotherDiv>
   );
 }
 
